@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día Mamá</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: inline-block;
+      max-width: 600px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.3em;
+      color: #555;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background: #b02a57;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>¡Feliz Día Mamá! ❤️</h1>
+    <p>Gracias por darme la vida y por tu amor incondicional.<br> ¡Te amo mucho!</p>
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    <p id="mensajeExtra" style="display:none; margin-top:20px;">💐 Eres la mejor mamá del mundo. ¡Feliz día! 💐</p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      const mensaje = document.getElementById('mensajeExtra');
+      mensaje.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
